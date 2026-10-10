@@ -1,7 +1,6 @@
 {
   "name": "cedars-of-wealth",
-  "version": "1.0.0-final-benchmark-proxy",
-  "private": true,
+  "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,6 +10,12 @@
     "next": "14.2.5",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "@supabase/supabase-js": "^2.45.0"
+    "@supabase/supabase-js": "^2.39.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "@types/react": "^18.3.3",
+    "@types/node": "^20.12.12",
+    "@types/react-dom": "^18.3.0"
   }
 }
