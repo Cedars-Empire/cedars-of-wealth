@@ -1,0 +1,4 @@
+*{box-sizing:border-box}
+body{background:#0a0a0a;color:#fff;font-family:system-ui, sans-serif}
+input,select,button{font-size:16px}
+button{cursor:pointer}
