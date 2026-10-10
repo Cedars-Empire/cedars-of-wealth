@@ -1,0 +1,19 @@
+name = "cedars-proxy"
+type = "javascript"
+
+# Cloudflare Proxy Protection — Your Requirement
+# Public IP shows 104.x.x.x (Orange Cloud) — Origin Vercel IP hidden
+# No open ports — Shodan shows no origin
+# WHOIS Contact Privacy Inc.
+
+[env.production]
+route = "app.cedarsofwealth.org/*"
+
+# Tunnel config — hides origin IP
+# cloudflared tunnel token stored in Vercel ENV CLOUDFLARE_TUNNEL_TOKEN
+
+# Zero Trust for /admin
+# Path /admin/* requires YubiKey 2FA via Cloudflare Access
+
+# Supabase IP allowlist — only Cloudflare IPs allowed
+# RLS enabled on all 5 tables FORM1-5
